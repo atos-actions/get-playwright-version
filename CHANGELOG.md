@@ -1,3 +1,12 @@
+## [1.2.8](https://github.com/atos-actions/get-playwright-version/compare/v1.2.7...v1.2.8) (2026-01-27)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump prettier from 3.8.0 to 3.8.1 ([#80](https://github.com/atos-actions/get-playwright-version/issues/80)) ([4abe765](https://github.com/atos-actions/get-playwright-version/commit/4abe7656ae4ae115c094e3aa418529545c4b358b))
+* **deps:** bump @actions/core from 2.0.2 to 2.0.3 ([#83](https://github.com/atos-actions/get-playwright-version/issues/83)) ([ac4d682](https://github.com/atos-actions/get-playwright-version/commit/ac4d6823f1a6705d1bc21622df79fd65514c2ce2))
+* **deps:** bump lodash from 4.17.21 to 4.17.23 ([#81](https://github.com/atos-actions/get-playwright-version/issues/81)) ([d2ebed9](https://github.com/atos-actions/get-playwright-version/commit/d2ebed999329479e36d052b2860c2ca3ea7c3440))
+* **deps:** bump lodash-es from 4.17.21 to 4.17.23 ([#82](https://github.com/atos-actions/get-playwright-version/issues/82)) ([4438b6d](https://github.com/atos-actions/get-playwright-version/commit/4438b6d2effae42eeb07f3fa288b289f0e88de1f))
+
 ## [1.2.7](https://github.com/atos-actions/get-playwright-version/compare/v1.2.6...v1.2.7) (2026-01-15)
 
 ### Dependencies and Other Build Updates
