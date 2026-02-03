@@ -1,3 +1,11 @@
+## [1.2.10](https://github.com/atos-actions/get-playwright-version/compare/v1.2.9...v1.2.10) (2026-02-03)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump the commitlint group with 2 updates ([#85](https://github.com/atos-actions/get-playwright-version/issues/85)) ([b5e270d](https://github.com/atos-actions/get-playwright-version/commit/b5e270d39e935db17e89e60f3c251b7a71535393))
+* **deps-dev:** bump the commitlint group with 2 updates ([#87](https://github.com/atos-actions/get-playwright-version/issues/87)) ([dc5dc85](https://github.com/atos-actions/get-playwright-version/commit/dc5dc8540c2a339ab49906e0f358838618411cc5))
+* **deps:** bump semantic-release in the semantic-release group ([#86](https://github.com/atos-actions/get-playwright-version/issues/86)) ([fc8395d](https://github.com/atos-actions/get-playwright-version/commit/fc8395dcb5cbd4bf2a12a898673ea8cf0d93e04d))
+
 ## [1.2.9](https://github.com/atos-actions/get-playwright-version/compare/v1.2.8...v1.2.9) (2026-01-30)
 
 ### Dependencies and Other Build Updates
