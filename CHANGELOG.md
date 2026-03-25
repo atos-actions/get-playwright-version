@@ -1,3 +1,13 @@
+## [1.2.11](https://github.com/atos-actions/get-playwright-version/compare/v1.2.10...v1.2.11) (2026-03-25)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump the commitlint group with 2 updates ([#88](https://github.com/atos-actions/get-playwright-version/issues/88)) ([c3f82b6](https://github.com/atos-actions/get-playwright-version/commit/c3f82b694c99a14898f8e77dcc634d451ff543c5))
+* **deps-dev:** bump the commitlint group with 2 updates ([#89](https://github.com/atos-actions/get-playwright-version/issues/89)) ([d070a9a](https://github.com/atos-actions/get-playwright-version/commit/d070a9a62846f189a5640e98acaa0404c6ca4241))
+* **deps-dev:** bump the commitlint group with 2 updates ([#90](https://github.com/atos-actions/get-playwright-version/issues/90)) ([37e8aa9](https://github.com/atos-actions/get-playwright-version/commit/37e8aa9f7db61d44087291a9b3f9d06c3b9d30f7))
+* **deps-dev:** bump the commitlint group with 2 updates ([#91](https://github.com/atos-actions/get-playwright-version/issues/91)) ([8c56ca0](https://github.com/atos-actions/get-playwright-version/commit/8c56ca0a38a920a8cbd5250512b5ae106081e26c))
+* **deps:** bump picomatch from 2.3.1 to 2.3.2 ([#92](https://github.com/atos-actions/get-playwright-version/issues/92)) ([b909db2](https://github.com/atos-actions/get-playwright-version/commit/b909db2ba06e67946878574d7ff1a2f090bccc71))
+
 ## [1.2.10](https://github.com/atos-actions/get-playwright-version/compare/v1.2.9...v1.2.10) (2026-02-03)
 
 ### Dependencies and Other Build Updates
