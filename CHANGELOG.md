@@ -1,3 +1,9 @@
+## [1.2.13](https://github.com/atos-actions/get-playwright-version/compare/v1.2.12...v1.2.13) (2026-04-02)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump lodash-es from 4.17.23 to 4.18.1 ([#94](https://github.com/atos-actions/get-playwright-version/issues/94)) ([0527381](https://github.com/atos-actions/get-playwright-version/commit/05273819c685fc016e2105791158f079a421027d))
+
 ## [1.2.12](https://github.com/atos-actions/get-playwright-version/compare/v1.2.11...v1.2.12) (2026-03-27)
 
 ### Dependencies and Other Build Updates
