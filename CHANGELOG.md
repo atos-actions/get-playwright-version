@@ -1,3 +1,15 @@
+## [1.2.16](https://github.com/atos-actions/get-playwright-version/compare/v1.2.15...v1.2.16) (2026-06-03)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump @commitlint/cli in the commitlint group ([#99](https://github.com/atos-actions/get-playwright-version/issues/99)) ([bc2c2ad](https://github.com/atos-actions/get-playwright-version/commit/bc2c2ad78cd8a85894577ec804839117470fb70b))
+* **deps-dev:** bump fast-uri from 3.1.0 to 3.1.2 ([#101](https://github.com/atos-actions/get-playwright-version/issues/101)) ([76c42b0](https://github.com/atos-actions/get-playwright-version/commit/76c42b0317fcb4865dc2a6c877f9066213742c17))
+* **deps-dev:** bump the commitlint group with 2 updates ([#100](https://github.com/atos-actions/get-playwright-version/issues/100)) ([459192d](https://github.com/atos-actions/get-playwright-version/commit/459192d5d595cdd6739d21af26d63f6dcb1c2fed))
+* **deps-dev:** bump the commitlint group with 2 updates ([#102](https://github.com/atos-actions/get-playwright-version/issues/102)) ([3ba968a](https://github.com/atos-actions/get-playwright-version/commit/3ba968aeb0752b6ba7d698f7ec77c42a866896a9))
+* **deps-dev:** bump the commitlint group with 2 updates ([#103](https://github.com/atos-actions/get-playwright-version/issues/103)) ([73a46d3](https://github.com/atos-actions/get-playwright-version/commit/73a46d33f1dea0b90f110963eef7c684a991b6be))
+* **deps-dev:** bump the commitlint group with 2 updates ([#104](https://github.com/atos-actions/get-playwright-version/issues/104)) ([f9ec241](https://github.com/atos-actions/get-playwright-version/commit/f9ec2414de1424e0a77dad39e4f14a3b4bf8f5ca))
+* **deps:** bump js-yaml from 4.1.1 to 4.2.0 ([#105](https://github.com/atos-actions/get-playwright-version/issues/105)) ([732a26b](https://github.com/atos-actions/get-playwright-version/commit/732a26bdac66d66bb136870446c0af733a90d4f5))
+
 ## [1.2.15](https://github.com/atos-actions/get-playwright-version/compare/v1.2.14...v1.2.15) (2026-04-21)
 
 ### Dependencies and Other Build Updates
