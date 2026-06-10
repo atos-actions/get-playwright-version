@@ -1,3 +1,11 @@
+## [1.2.17](https://github.com/atos-actions/get-playwright-version/compare/v1.2.16...v1.2.17) (2026-06-10)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump @vercel/ncc from 0.38.4 to 0.44.0 ([#106](https://github.com/atos-actions/get-playwright-version/issues/106)) ([07ba9f2](https://github.com/atos-actions/get-playwright-version/commit/07ba9f2cf43010cfd2a283172eafcbabef49e1f8))
+* **deps-dev:** bump prettier from 3.8.3 to 3.8.4 ([#107](https://github.com/atos-actions/get-playwright-version/issues/107)) ([6f4a81d](https://github.com/atos-actions/get-playwright-version/commit/6f4a81d05cce88414b739b78f08532ed946ebf71))
+* **deps:** bump semantic-release in the semantic-release group ([#108](https://github.com/atos-actions/get-playwright-version/issues/108)) ([5366318](https://github.com/atos-actions/get-playwright-version/commit/53663182de06923844c8b1e226cb01c26d9cd190))
+
 ## [1.2.16](https://github.com/atos-actions/get-playwright-version/compare/v1.2.15...v1.2.16) (2026-06-03)
 
 ### Dependencies and Other Build Updates
