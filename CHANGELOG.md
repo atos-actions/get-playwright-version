@@ -1,3 +1,9 @@
+## [1.2.18](https://github.com/atos-actions/get-playwright-version/compare/v1.2.17...v1.2.18) (2026-06-19)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump actions/checkout from 6 to 7 ([#109](https://github.com/atos-actions/get-playwright-version/issues/109)) ([a945177](https://github.com/atos-actions/get-playwright-version/commit/a9451776e2bf02a6b15acc454702f1b1da4ee69f))
+
 ## [1.2.17](https://github.com/atos-actions/get-playwright-version/compare/v1.2.16...v1.2.17) (2026-06-10)
 
 ### Dependencies and Other Build Updates
