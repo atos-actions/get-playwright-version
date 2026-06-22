@@ -1,3 +1,13 @@
+## [2.0.0](https://github.com/atos-actions/get-playwright-version/compare/v1.2.19...v2.0.0) (2026-06-22)
+
+### ⚠ BREAKING CHANGES
+
+* bump node version to 24
+
+### Features
+
+* bump Node.js version from 20 to 24 ([#111](https://github.com/atos-actions/get-playwright-version/issues/111)) ([b520aa5](https://github.com/atos-actions/get-playwright-version/commit/b520aa56fc4200f1b33a34c63f5c5499703547b1))
+
 ## [1.2.19](https://github.com/atos-actions/get-playwright-version/compare/v1.2.18...v1.2.19) (2026-06-22)
 
 ### Dependencies and Other Build Updates
