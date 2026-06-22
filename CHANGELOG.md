@@ -1,3 +1,9 @@
+## [1.2.19](https://github.com/atos-actions/get-playwright-version/compare/v1.2.18...v1.2.19) (2026-06-22)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump js-yaml from 4.2.0 to 5.0.0 ([#110](https://github.com/atos-actions/get-playwright-version/issues/110)) ([cbefe49](https://github.com/atos-actions/get-playwright-version/commit/cbefe49e32719e94ce540d9ce267c23a26aab9e4))
+
 ## [1.2.18](https://github.com/atos-actions/get-playwright-version/compare/v1.2.17...v1.2.18) (2026-06-19)
 
 ### Dependencies and Other Build Updates
