@@ -1,3 +1,13 @@
+## [2.0.3](https://github.com/atos-actions/get-playwright-version/compare/v2.0.2...v2.0.3) (2026-07-02)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump @vercel/ncc from 0.44.0 to 0.44.1 ([#117](https://github.com/atos-actions/get-playwright-version/issues/117)) ([ce62cd2](https://github.com/atos-actions/get-playwright-version/commit/ce62cd2dd13b6ca4934c3a3c8f5e08a2e51a7967))
+* **deps-dev:** bump prettier from 3.9.1 to 3.9.3 ([#116](https://github.com/atos-actions/get-playwright-version/issues/116)) ([231a6ea](https://github.com/atos-actions/get-playwright-version/commit/231a6ea8a93dc2aabe8490ecfa92f32c73981a96))
+* **deps-dev:** bump prettier from 3.9.3 to 3.9.4 ([#119](https://github.com/atos-actions/get-playwright-version/issues/119)) ([adc1ce0](https://github.com/atos-actions/get-playwright-version/commit/adc1ce0a0efc4790493b9546d8225ac30330ccf0))
+* **deps-dev:** bump the commitlint group with 2 updates ([#118](https://github.com/atos-actions/get-playwright-version/issues/118)) ([da595d8](https://github.com/atos-actions/get-playwright-version/commit/da595d808ed4fea526d8733c06c9dbad75f6c580))
+* **deps:** bump js-yaml from 5.2.0 to 5.2.1 ([#120](https://github.com/atos-actions/get-playwright-version/issues/120)) ([980f990](https://github.com/atos-actions/get-playwright-version/commit/980f990202362d3c2ebc3c692ce86d28c557e393))
+
 ## [2.0.2](https://github.com/atos-actions/get-playwright-version/compare/v2.0.1...v2.0.2) (2026-06-29)
 
 ### Dependencies and Other Build Updates
