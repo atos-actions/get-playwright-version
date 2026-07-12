@@ -1,3 +1,11 @@
+## [2.0.4](https://github.com/atos-actions/get-playwright-version/compare/v2.0.3...v2.0.4) (2026-07-12)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump @commitlint/cli in the commitlint group ([#121](https://github.com/atos-actions/get-playwright-version/issues/121)) ([71eca0f](https://github.com/atos-actions/get-playwright-version/commit/71eca0fb33c6553950eabf231bf9bd1577d9571e))
+* **deps-dev:** bump prettier from 3.9.4 to 3.9.5 ([#122](https://github.com/atos-actions/get-playwright-version/issues/122)) ([79a31a0](https://github.com/atos-actions/get-playwright-version/commit/79a31a088b00a89244fea83891c4a9a1b9ab3fe5))
+* **deps:** bump semantic-release in the semantic-release group ([#123](https://github.com/atos-actions/get-playwright-version/issues/123)) ([566b9f9](https://github.com/atos-actions/get-playwright-version/commit/566b9f9a9e4e8db942ee946091364d99c0aba70a))
+
 ## [2.0.3](https://github.com/atos-actions/get-playwright-version/compare/v2.0.2...v2.0.3) (2026-07-02)
 
 ### Dependencies and Other Build Updates
