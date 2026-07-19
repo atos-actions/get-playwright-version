@@ -1,3 +1,9 @@
+## [2.0.6](https://github.com/atos-actions/get-playwright-version/compare/v2.0.5...v2.0.6) (2026-07-19)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump semantic-release in the semantic-release group ([#126](https://github.com/atos-actions/get-playwright-version/issues/126)) ([f961fc3](https://github.com/atos-actions/get-playwright-version/commit/f961fc369830b9fd64b8fb3f849878ac6d0067ff))
+
 ## [2.0.5](https://github.com/atos-actions/get-playwright-version/compare/v2.0.4...v2.0.5) (2026-07-13)
 
 ### Dependencies and Other Build Updates
