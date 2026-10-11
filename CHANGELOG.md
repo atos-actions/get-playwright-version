@@ -1,3 +1,9 @@
+## [2.0.19](https://github.com/atos-actions/get-playwright-version/compare/v2.0.18...v2.0.19) (2026-10-11)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump handlebars from 4.7.9 to 4.7.10 ([#152](https://github.com/atos-actions/get-playwright-version/issues/152)) ([112dd9e](https://github.com/atos-actions/get-playwright-version/commit/112dd9e87266a1bdaa275cd0de96c250a220b052))
+
 ## [2.0.18](https://github.com/atos-actions/get-playwright-version/compare/v2.0.17...v2.0.18) (2026-10-11)
 
 ### Dependencies and Other Build Updates
