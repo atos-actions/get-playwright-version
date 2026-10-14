@@ -1,3 +1,9 @@
+## [2.0.21](https://github.com/atos-actions/get-playwright-version/compare/v2.0.20...v2.0.21) (2026-10-14)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump the atos-actions group with 3 updates ([#153](https://github.com/atos-actions/get-playwright-version/issues/153)) ([8bc001c](https://github.com/atos-actions/get-playwright-version/commit/8bc001c2f290c752ce6fc096f62a5f0948d69d14))
+
 ## [2.0.20](https://github.com/atos-actions/get-playwright-version/compare/v2.0.19...v2.0.20) (2026-10-12)
 
 ### Dependencies and Other Build Updates
