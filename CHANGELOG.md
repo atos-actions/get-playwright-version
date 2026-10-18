@@ -1,3 +1,10 @@
+## [2.0.22](https://github.com/atos-actions/get-playwright-version/compare/v2.0.21...v2.0.22) (2026-10-18)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump prettier from 3.9.9 to 3.9.10 ([#154](https://github.com/atos-actions/get-playwright-version/issues/154)) ([0010aa5](https://github.com/atos-actions/get-playwright-version/commit/0010aa5eac8d1b292dfb27b4348532d6f7b4c846))
+* **deps:** bump the atos-actions group with 3 updates ([#155](https://github.com/atos-actions/get-playwright-version/issues/155)) ([43d88f6](https://github.com/atos-actions/get-playwright-version/commit/43d88f6c6653a79fe2520793e6fd774fc5f63ec2))
+
 ## [2.0.21](https://github.com/atos-actions/get-playwright-version/compare/v2.0.20...v2.0.21) (2026-10-14)
 
 ### Dependencies and Other Build Updates
