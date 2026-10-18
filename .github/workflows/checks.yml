@@ -24,14 +24,14 @@ concurrency:
 jobs:
   pr-lint:
     name: '▶️ actions'
-    uses: atos-actions/actions/.github/workflows/lint-pr.yml@35635f5037ce1bcf6c05b31c95b8ff0ff0875e3e # v3.2.22
+    uses: atos-actions/actions/.github/workflows/lint-pr.yml@26e53b35d478385bbd01cd1ccc8293f66517a393 # v3.2.23
     permissions:
       contents: read
       pull-requests: write
 
   npm-lint:
     name: '▶️ actions'
-    uses: atos-actions/actions/.github/workflows/lint-code.yml@35635f5037ce1bcf6c05b31c95b8ff0ff0875e3e # v3.2.22
+    uses: atos-actions/actions/.github/workflows/lint-code.yml@26e53b35d478385bbd01cd1ccc8293f66517a393 # v3.2.23
 
   test:
     name: '▶📌'
