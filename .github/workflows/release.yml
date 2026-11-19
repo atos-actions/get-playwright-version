@@ -25,7 +25,7 @@ jobs:
     permissions:
       contents: write
       packages: write
-    uses: atos-actions/actions/.github/workflows/release.yml@26e53b35d478385bbd01cd1ccc8293f66517a393 # v3.2.23
+    uses: atos-actions/actions/.github/workflows/release.yml@777ab022508030470ad817e72a79abd019975f20 # v3.2.24
     secrets:
       RELEASE_APP_ID: ${{ secrets.RELEASE_APP_ID }}
       RELEASE_APP_PRIVATE_KEY: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
