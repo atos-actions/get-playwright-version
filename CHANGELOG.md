@@ -1,3 +1,11 @@
+## [2.0.24](https://github.com/atos-actions/get-playwright-version/compare/v2.0.23...v2.0.24) (2026-11-19)
+
+### Dependencies and Other Build Updates
+
+* **deps-dev:** bump fast-uri from 3.1.8 to 3.1.9 ([#158](https://github.com/atos-actions/get-playwright-version/issues/158)) ([7469fc1](https://github.com/atos-actions/get-playwright-version/commit/7469fc1134e6f63a6821b3d5e022625f8868d784))
+* **deps-dev:** bump the commitlint group with 2 updates ([#157](https://github.com/atos-actions/get-playwright-version/issues/157)) ([25247ad](https://github.com/atos-actions/get-playwright-version/commit/25247ad82af69f9743ef998a7807d2886a35ec4a))
+* **deps:** bump the atos-actions group with 3 updates ([#160](https://github.com/atos-actions/get-playwright-version/issues/160)) ([4ff0bfa](https://github.com/atos-actions/get-playwright-version/commit/4ff0bfa6b2ad17105d2a2ecfd334ff9c7c97f6de))
+
 ## [2.0.23](https://github.com/atos-actions/get-playwright-version/compare/v2.0.22...v2.0.23) (2026-10-19)
 
 ### Dependencies and Other Build Updates
