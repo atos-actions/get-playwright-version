@@ -1,3 +1,9 @@
+## [2.0.26](https://github.com/atos-actions/get-playwright-version/compare/v2.0.25...v2.0.26) (2026-11-20)
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump undici from 6.23.0 to 6.29.1 ([#162](https://github.com/atos-actions/get-playwright-version/issues/162)) ([f5a9b20](https://github.com/atos-actions/get-playwright-version/commit/f5a9b201b445b02f3951105ad4b17758805b6009))
+
 ## [2.0.25](https://github.com/atos-actions/get-playwright-version/compare/v2.0.24...v2.0.25) (2026-11-20)
 
 ### Dependencies and Other Build Updates
