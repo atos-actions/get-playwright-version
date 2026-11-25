@@ -61,6 +61,12 @@ jobs:
 | :------------------: | :-----------------------------------------------: | :-------: |
 | `playwright-version` | The playwright version from the package-lock.json | `v1.47.1` |
 
+## Development
+
+Lefthook's install script is allowed through `allowScripts` in `package.json` (npm, including npm 12) and `allowBuilds` in `pnpm-workspace.yaml` (PNPM). These policies allow Lefthook across dependency updates without allowing every dependency's scripts.
+
+Review any new dependency install scripts before adding them to either policy.
+
 ## Sources
 
 Thanks to [@mxschmitt](https://github.com/mxschmitt) for coming up with the [workflow](https://github.com/microsoft/playwright/issues/32483#issuecomment-2348193597) this action is based on.

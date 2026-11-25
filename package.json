@@ -47,5 +47,8 @@
 	"dependencies": {
 		"@actions/core": "^3.0.1",
 		"js-yaml": "^5.5.0"
+	},
+	"allowScripts": {
+		"lefthook": true
 	}
 }
