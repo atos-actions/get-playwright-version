@@ -1,11 +1,8 @@
 pre-commit:
-  parallel: true
   commands:
-    lint:
-      run: npm run lint:fix {staged_files}
+    lint-and-build:
+      run: npm run lint:fix {staged_files} && npm run build && git add dist
       stage_fixed: true
-    build:
-      run: npm run build && git add dist
 
 pre-push:
   parallel: true
