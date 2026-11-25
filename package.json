@@ -28,7 +28,6 @@
 		"build": "npx ncc build src/index.mjs -o dist --source-map --license licenses.txt",
 		"lint": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
 		"lint:fix": "biome check --no-errors-on-unmatched --files-ignore-unknown=true --write",
-		"prepare": "husky",
 		"release": "npx semantic-release",
 		"test": "echo 'No test script defined for this project'"
 	},
