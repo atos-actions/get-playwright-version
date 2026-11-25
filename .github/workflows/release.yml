@@ -21,7 +21,7 @@ concurrency:
 jobs:
   semantic-release:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    name: '▶️ actions'
+    name: "▶️ actions"
     permissions:
       contents: write
       packages: write

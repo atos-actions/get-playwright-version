@@ -1,8 +1,8 @@
-import core from '@actions/core';
-import { promises as fs } from 'node:fs';
-import yaml from 'js-yaml';
+import { promises as fs } from "node:fs";
+import core from "@actions/core";
+import yaml from "js-yaml";
 
-const noVersionFound = core.getInput('no-version-found');
+const noVersionFound = core.getInput("no-version-found");
 
 /**
  * The main function for the action.
@@ -14,18 +14,18 @@ export const run = async () => {
 			(await getVersionFromPackageLock()) || (await getVersionFromYarnLock()) || (await getVersionFromPnpmLock());
 		if (!version) {
 			switch (noVersionFound) {
-				case 'info':
-					core.info('No Playwright version found');
+				case "info":
+					core.info("No Playwright version found");
 					break;
-				case 'warning':
-					core.warning('No Playwright version found');
+				case "warning":
+					core.warning("No Playwright version found");
 					break;
 				default:
-					core.setFailed('No Playwright version found');
+					core.setFailed("No Playwright version found");
 					break;
 			}
 		} else {
-			core.setOutput('playwright-version', `${version}`);
+			core.setOutput("playwright-version", `${version}`);
 		}
 	} catch (error) {
 		console.error(error);
@@ -35,36 +35,36 @@ export const run = async () => {
 
 const getVersionFromPackageLock = async () => {
 	try {
-		const data = await fs.readFile('./package-lock.json', 'utf-8');
-		console.debug('package-lock.json found');
+		const data = await fs.readFile("./package-lock.json", "utf-8");
+		console.debug("package-lock.json found");
 
 		const lockfile = JSON.parse(data);
 
 		try {
-			let version =
-				lockfile['packages']['node_modules/playwright'].version ||
-				lockfile['packages']['node_modules/@playwright/test'].version;
+			const version =
+				lockfile["packages"]["node_modules/playwright"].version ||
+				lockfile["packages"]["node_modules/@playwright/test"].version;
 
 			console.log(`Playwright v${version} found in the package-lock.json`);
 			return `v${version}`;
 		} catch (error) {
 			console.log(error);
 		}
-	} catch (error) {
-		console.debug('package-lock.json not found');
+	} catch (_error) {
+		console.debug("package-lock.json not found");
 	}
 };
 
 const getVersionFromYarnLock = async () => {
 	try {
-		const data = await fs.readFile('./yarn.lock', 'utf-8');
-		console.debug('yarn.lock found');
+		const data = await fs.readFile("./yarn.lock", "utf-8");
+		console.debug("yarn.lock found");
 
-		const lines = data.split('\n');
-		let playwrightLineIndex = lines.findIndex((line) => line.includes('playwright@'));
+		const lines = data.split("\n");
+		let playwrightLineIndex = lines.findIndex((line) => line.includes("playwright@"));
 
 		if (playwrightLineIndex === -1) {
-			playwrightLineIndex = lines.findIndex((line) => line.includes('@playwright/test@'));
+			playwrightLineIndex = lines.findIndex((line) => line.includes("@playwright/test@"));
 		}
 
 		if (playwrightLineIndex !== -1) {
@@ -74,22 +74,22 @@ const getVersionFromYarnLock = async () => {
 			console.log(`Playwright v${version} found in the yarn.lock`);
 			return `v${version}`;
 		}
-	} catch (error) {
-		console.debug('yarn.lock not found');
+	} catch (_error) {
+		console.debug("yarn.lock not found");
 	}
 };
 
 const getVersionFromPnpmLock = async () => {
 	try {
-		const data = await fs.readFile('./pnpm-lock.yaml', 'utf-8');
-		console.debug('pnpm-lock.yaml found');
+		const data = await fs.readFile("./pnpm-lock.yaml", "utf-8");
+		console.debug("pnpm-lock.yaml found");
 
 		const lockfile = yaml.load(data);
 		const packages = lockfile.packages;
 
 		// First, check for the non-scoped playwright package.
 		for (const pkg in packages) {
-			if (pkg.includes('playwright')) {
+			if (pkg.includes("playwright")) {
 				const match = pkg.match(/@([^@]+)$/);
 				if (match) {
 					const version = match[1];
@@ -101,7 +101,7 @@ const getVersionFromPnpmLock = async () => {
 
 		// Fallback: check for '@playwright/test'
 		for (const pkg in packages) {
-			if (pkg.includes('@playwright/test')) {
+			if (pkg.includes("@playwright/test")) {
 				const match = pkg.match(/@([^@]+)$/);
 				if (match) {
 					const version = match[1];
@@ -110,7 +110,7 @@ const getVersionFromPnpmLock = async () => {
 				}
 			}
 		}
-	} catch (error) {
-		console.debug('pnpm-lock.yaml not found');
+	} catch (_error) {
+		console.debug("pnpm-lock.yaml not found");
 	}
 };
