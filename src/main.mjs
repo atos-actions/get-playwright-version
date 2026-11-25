@@ -1,6 +1,6 @@
 import { promises as fs } from "node:fs";
-import core from "@actions/core";
-import yaml from "js-yaml";
+import * as core from "@actions/core";
+import { load } from "js-yaml";
 
 const noVersionFound = core.getInput("no-version-found");
 
@@ -84,7 +84,7 @@ const getVersionFromPnpmLock = async () => {
 		const data = await fs.readFile("./pnpm-lock.yaml", "utf-8");
 		console.debug("pnpm-lock.yaml found");
 
-		const lockfile = yaml.load(data);
+		const lockfile = load(data);
 		const packages = lockfile.packages;
 
 		// First, check for the non-scoped playwright package.
