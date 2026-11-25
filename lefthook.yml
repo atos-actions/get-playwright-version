@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: npm run lint:fix {staged_files}
+      stage_fixed: true
+    build:
+      run: npm run build && git add dist
+
+pre-push:
+  parallel: true
+  commands:
+    lint:
+      run: npm test
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit {1}
