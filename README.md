@@ -61,6 +61,12 @@ jobs:
 | :------------------: | :-----------------------------------------------: | :-------: |
 | `playwright-version` | The playwright version from the package-lock.json | `v1.47.1` |
 
+## Development
+
+Lefthook's install script is approved through `allowScripts` in `package.json` (npm) and `allowBuilds` in `pnpm-workspace.yaml` (PNPM), allowing Lefthook across dependency updates without broadly approving other dependencies' scripts. npm enforces this allowlist starting with npm 12; npm 10 does not support `allowScripts`, and npm 11 treats it as advisory, so other dependencies' install scripts can still run on those versions.
+
+Review any new dependency install scripts before adding them to either policy.
+
 ## Sources
 
 Thanks to [@mxschmitt](https://github.com/mxschmitt) for coming up with the [workflow](https://github.com/microsoft/playwright/issues/32483#issuecomment-2348193597) this action is based on.

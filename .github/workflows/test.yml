@@ -13,34 +13,34 @@ permissions:
 
 jobs:
   test-npm:
-    name: '🧪 Test NPM (@playwright/test)'
+    name: "🧪 Test NPM (@playwright/test)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install @playwright/test'
+      - name: "🎭 Install @playwright/test"
         run: npm i @playwright/test
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -55,34 +55,34 @@ jobs:
           fi
 
   test-npm-playwright:
-    name: '🧪 Test NPM (playwright package)'
+    name: "🧪 Test NPM (playwright package)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install playwright'
+      - name: "🎭 Install playwright"
         run: npm i playwright
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -97,30 +97,30 @@ jobs:
           fi
 
   test-no-version:
-    name: '🧪 Test no version'
+    name: "🧪 Test no version"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
         with:
-          no-version-found: 'warning'
+          no-version-found: "warning"
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -133,37 +133,37 @@ jobs:
           fi
 
   test-yarn:
-    name: '🧪 Test Yarn (@playwright/test)'
+    name: "🧪 Test Yarn (@playwright/test)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🎭 Install YARN'
+      - name: "🎭 Install YARN"
         run: npm i -g yarn
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install @playwright/test'
+      - name: "🎭 Install @playwright/test"
         run: yarn add @playwright/test
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -178,37 +178,37 @@ jobs:
           fi
 
   test-yarn-playwright:
-    name: '🧪 Test Yarn (playwright package)'
+    name: "🧪 Test Yarn (playwright package)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🎭 Install YARN'
+      - name: "🎭 Install YARN"
         run: npm i -g yarn
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install playwright'
+      - name: "🎭 Install playwright"
         run: yarn add playwright
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -223,37 +223,37 @@ jobs:
           fi
 
   test-pnpm:
-    name: '🧪 Test PNPM (@playwright/test)'
+    name: "🧪 Test PNPM (@playwright/test)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🎭 Install PNPM'
+      - name: "🎭 Install PNPM"
         run: npm i -g pnpm
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install @playwright/test'
+      - name: "🎭 Install @playwright/test"
         run: pnpm add @playwright/test
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
@@ -268,37 +268,37 @@ jobs:
           fi
 
   test-pnpm-playwright:
-    name: '🧪 Test PNPM (playwright package)'
+    name: "🧪 Test PNPM (playwright package)"
     runs-on: ubuntu-latest
 
     steps:
-      - name: '☁️ Checkout repository'
+      - name: "☁️ Checkout repository"
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: '⚙️ Use Node.js'
+      - name: "⚙️ Use Node.js"
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           check-latest: true
-          cache: 'npm'
+          cache: "npm"
 
-      - name: '🎭 Install PNPM'
+      - name: "🎭 Install PNPM"
         run: npm i -g pnpm
 
-      - name: '🧹 Remove package-lock'
+      - name: "🧹 Remove package-lock"
         run: rm -f package-lock.json
 
-      - name: '🎭 Install playwright'
+      - name: "🎭 Install playwright"
         run: pnpm add playwright
 
-      - name: '✅ Test code'
+      - name: "✅ Test code"
         id: get-version
         uses: ./
 
-      - name: 'Verify version'
+      - name: "Verify version"
         shell: bash
         env:
           playwright_version: ${{ steps.get-version.outputs.playwright-version }}
