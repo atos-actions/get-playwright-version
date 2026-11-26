@@ -63,7 +63,7 @@ jobs:
 
 ## Development
 
-Lefthook's install script is allowed through `allowScripts` in `package.json` (npm, including npm 12) and `allowBuilds` in `pnpm-workspace.yaml` (PNPM). These policies allow Lefthook across dependency updates without allowing every dependency's scripts.
+Lefthook's install script is approved through `allowScripts` in `package.json` (npm) and `allowBuilds` in `pnpm-workspace.yaml` (PNPM), allowing Lefthook across dependency updates without broadly approving other dependencies' scripts. npm enforces this allowlist starting with npm 12; npm 10 does not support `allowScripts`, and npm 11 treats it as advisory, so other dependencies' install scripts can still run on those versions.
 
 Review any new dependency install scripts before adding them to either policy.
 
